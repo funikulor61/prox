@@ -1,11 +1,10 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.action_chains import ActionChains
-from selenium.webdriver.chrome.service import Service
 from sudoku import Sudoku
 import time
 
-driver = webdriver.Chrome(service=Service(), options=webdriver.ChromeOptions())
+driver = webdriver.Chrome()
 
 try:
     driver.get("https://absite.ru/sudoku/")
